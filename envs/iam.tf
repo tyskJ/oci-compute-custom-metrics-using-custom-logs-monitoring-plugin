@@ -37,6 +37,11 @@ resource "oci_identity_policy" "compute_for_agent_custommoni" {
       oci_identity_dynamic_group.compute_oracle.name,
       oci_identity_dynamic_group.compute_windows.name,
       oci_identity_compartment.workload.name
+    ),
+    format("allow dynamic-group %s, %s to {UNIFIED_AGENT_CONFIG_GENERATE} in compartment %s",
+      oci_identity_dynamic_group.compute_oracle.name,
+      oci_identity_dynamic_group.compute_windows.name,
+      oci_identity_compartment.workload.name
     )
   ]
   defined_tags = local.common_defined_tags
