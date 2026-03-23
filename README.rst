@@ -72,7 +72,7 @@ OCI Compute のカスタムメトリクス取得方法 - Custom Logs Monitoring 
   cat <<EOF > config.oci.tfbackend
   bucket = "terraform-working"
   namespace = "テナンシに一意に付与されたネームスペース"
-  key = "oci-compute-custom-metrics-using-custom-logs-monitoring-plugin/terraform.tfstate"
+  key = "oci-compute-custom-metrics-broadcast-custom-logs-monitoring-plugin/terraform.tfstate"
   auth = "SecurityToken"
   config_file_profile = "ADMIN"
   region = "ap-tokyo-1"
