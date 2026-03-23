@@ -7,3 +7,13 @@ locals {
     format("%s.%s", oci_identity_tag_namespace.common.name, oci_identity_tag.key_managedbyterraform.name) = "true"
   }
 }
+
+/************************************************************
+Region List
+************************************************************/
+locals {
+  region_map = {
+    for r in data.oci_identity_regions.regions.regions :
+    r.key => r.name
+  }
+}
