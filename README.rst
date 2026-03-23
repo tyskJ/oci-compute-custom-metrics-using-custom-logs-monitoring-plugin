@@ -1,7 +1,7 @@
 .. image:: ./doc/001samune.png
 
 =====================================================================
-OCI Compute のカスタムメトリクスを Custom Logs Monitoring Plugin で取得する - Linux/Windows
+OCI Compute のカスタムメトリクス取得方法 - Custom Logs Monitoring Plugin 編
 =====================================================================
 * `詳細 <>`_
 
