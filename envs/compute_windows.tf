@@ -42,6 +42,7 @@ resource "oci_core_instance" "windows_instance" {
   }
   availability_config {
     # Live Migration の有効化
+    # 無効化すると、メンテナンス時に通知がOracleから届き、手動対応が必要となる
     is_live_migration_preferred = true
     # 物理ホストメンテナンス実行後のインスタンス復旧方法
     # RESTORE_INSTCNE=再起動
