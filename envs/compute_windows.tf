@@ -46,6 +46,7 @@ resource "oci_core_instance" "windows_instance" {
     is_live_migration_preferred = true
     # 物理ホストメンテナンス実行後のインスタンス復旧方法
     # RESTORE_INSTCNE=再起動
+    # Live Migration が有効の場合は、Live Migrationが出来なかった時に本actionが実行される
     recovery_action = "RESTORE_INSTANCE"
   }
   agent_config {
