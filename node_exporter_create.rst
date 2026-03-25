@@ -124,7 +124,7 @@ Windows
 
 .. code-block:: powershell
 
-  msiexec.exe /i <path-to-msi-file> --% ENABLED_COLLECTORS=cpu,logical_disk,memory,process,service
+  msiexec.exe /i <full-path-to-msi-file> --% ENABLED_COLLECTORS=cpu,logical_disk,memory,process,service
 
 .. note::
 
